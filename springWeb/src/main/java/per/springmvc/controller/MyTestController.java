@@ -37,11 +37,9 @@ public class MyTestController {
     }
 
     @MyRequestMapping("sub")
-    public void sub(@MyRequestParam("a") Double a, HttpServletRequest req, @MyRequestParam("b") Double b, HttpServletResponse resp) {
-        try {
-            resp.getWriter().write(a + "-" + b + "=" + (a - b));
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+    public String sub(@MyRequestParam("a") Double a, HttpServletRequest req, @MyRequestParam("b") Double b, HttpServletResponse resp) {
+
+            return a + "-" + b + "=" + (a - b);
+
     }
 }

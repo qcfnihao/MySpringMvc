@@ -6,7 +6,7 @@
   <display-name>Archetype Created Web Application</display-name>
   <servlet>
     <servlet-name>mySpring</servlet-name>
-    <servlet-class>per.springmvc.servlet.v2.MyDispatcherServlet</servlet-class>
+    <servlet-class>per.springmvc.servlet.v3.MyDispatcherServlet</servlet-class>
     <init-param>
       <param-name>contextConfigLocation</param-name>
       <param-value>application.properties</param-value>
